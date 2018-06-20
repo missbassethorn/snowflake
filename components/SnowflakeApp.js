@@ -50,51 +50,29 @@ const emptyState = (): SnowflakeAppState => {
     name: '',
     title: '',
     milestoneByTrack: {
-      'MOBILE': 0,
-      'WEB_CLIENT': 0,
-      'FOUNDATIONS': 0,
-      'SERVERS': 0,
-      'PROJECT_MANAGEMENT': 0,
-      'COMMUNICATION': 0,
-      'CRAFT': 0,
-      'INITIATIVE': 0,
-      'CAREER_DEVELOPMENT': 0,
-      'ORG_DESIGN': 0,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 0,
-      'MENTORSHIP': 0,
-      'EVANGELISM': 0,
-      'RECRUITING': 0,
-      'COMMUNITY': 0
+      'PEOPLE': 0,
+      'TEST_APPROACH': 0,
+      'TEST_TECHNIQUE': 0,
+      'TEST_DOMAIN_KNOWLEDGE': 0,
+      'MOBILE_DEV': 0,
+      'RAILS_DEV': 0,
+      'DEV_SOFTWARE_CRAFT': 0,
+      'DEV_TOOLING_SYSTEMS': 0,
+      'DEVOPS_FOUNDATION': 0,
+      'DEVOPS_TRANSFORMATION': 0,
+      'DEVOPS_CONSTRUCTION': 0,
+      'SCRUM_MASTER_PRACTICE': 0,
+      'SCRUM_MASTER_TECHNICAL': 0,
+      'BLANK_1': 0,
+      'BLANK_2': 0,
+      'BLANK_3': 0
     },
-    focusedTrackId: 'MOBILE'
+    focusedTrackId: 'PEOPLE'
   }
 }
 
 const defaultState = (): SnowflakeAppState => {
-  return {
-    name: 'Cersei Lannister',
-    title: 'Staff Engineer',
-    milestoneByTrack: {
-      'MOBILE': 1,
-      'WEB_CLIENT': 2,
-      'FOUNDATIONS': 3,
-      'SERVERS': 2,
-      'PROJECT_MANAGEMENT': 4,
-      'COMMUNICATION': 1,
-      'CRAFT': 1,
-      'INITIATIVE': 4,
-      'CAREER_DEVELOPMENT': 3,
-      'ORG_DESIGN': 2,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 4,
-      'MENTORSHIP': 2,
-      'EVANGELISM': 2,
-      'RECRUITING': 3,
-      'COMMUNITY': 0
-    },
-    focusedTrackId: 'MOBILE'
-  }
+  return emptyState()
 }
 
 const stateToHash = (state: SnowflakeAppState) => {
@@ -155,29 +133,8 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             text-decoration: none;
           }
         `}</style>
-        <div style={{margin: '19px auto 0', width: 142}}>
-          <a href="https://medium.com/" target="_blank">
-            <Wordmark />
-          </a>
-        </div>
+
         <div style={{display: 'flex'}}>
-          <div style={{flex: 1}}>
-            <form>
-              <input
-                  type="text"
-                  className="name-input"
-                  value={this.state.name}
-                  onChange={e => this.setState({name: e.target.value})}
-                  placeholder="Name"
-                  />
-              <TitleSelector
-                  milestoneByTrack={this.state.milestoneByTrack}
-                  currentTitle={this.state.title}
-                  setTitleFn={(title) => this.setTitle(title)} />
-            </form>
-            <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
-            <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} />
-          </div>
           <div style={{flex: 0}}>
             <NightingaleChart
                 milestoneByTrack={this.state.milestoneByTrack}
