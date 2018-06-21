@@ -289,66 +289,58 @@ export const tracks: Tracks = {
   "TEST_DOMAIN_KNOWLEDGE": {
     "displayName": "Test domain knowledge",
     "category": "B",
-    "description": "Develops expertise in server side engineering, using technologies such as Go, NodeJS, or Scala",
+    "description": "Demonstrates expertise in a particular area of either testing or business specific knowledge and shares this knowledge widely and well within Flux and the wider community where appropriate.",
     "milestones": [{
-      "summary": "Works effectively within established server side frameworks, following current best practices",
+      "summary": "Grows domain knowledge in a specific area to confidently test software.",
       "signals": [
-        "Adds NodeJS endpoints using layers architecture",
-        "Adds golang endpoints using Gotham architecture",
-        "Makes minor server changes to support client needs",
+        "Shows initiative to learn the concepts and ask relevant questions",
+        "Self Driven: To be able to acquire or read about a specific topic on the confluence before asking for help",
+        "Sponge it up: Tries to absorb as much knowledge as possible during the team discussions ",
+        "Ability to understand the concepts of their current value stream seek help of others in the value stream to understand further concepts to test a story. ",
+        "Makes an effort to learn functionality of the application their team is working on.",
       ],
       "examples": [
-        "Added IFTTT trigger for new bookmark to medium2",
-        "Added delete audio route to Buggle",
-        "Queried a Dynamo LSI appropriately",
       ],
     }, {
-      "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
+      "summary": "Has an indepth understanding of a particular area of domain knowledge that they can use to support their delivery team with documentation and discussion.",
       "signals": [
-        "Assesses correctness and utility of existing code and avoids blind copy-pasting",
-        "Generalizes code when appropriate",
-        "Determines data needs from product requirements",
+        "Is confident in the knowledge that they have worked on",
+        "Confident in testing in their area of expertise/domain",
+        "Reads Confluence/Jira to understand the more in-depth functionalities within the app, not necessarily those that are directly related to their team's changes.",
+        "Ability to explain the functionalities and concepts to newbies or any other person requiring help",
+        "Can confidently have discussions about their area of expertise/domain within team",
       ],
       "examples": [
-        "Identified need for new index on Dynamo",
-        "Acted as caretaker for routes protos",
-        "Updated Facebook API version and codebase dependencies",
       ],
     }, {
-      "summary": "Designs standalone systems of moderate complexity, or major new features in existing systems",
+      "summary": "Understands and documents a wider area of domain knowledge enough to be considered an SME within their Value Stream.",
       "signals": [
-        "Acts as primary maintainer for existing critical systems",
-        "Integrates third party services effectively",
-        "Writes playbooks for new service maintenance",
+        "Has an in-depth understanding of the domain and confidently knows their area well, and is starting to become recognised as an SME within their stream",
+        "Can point others within the wider team towards Jira/Confluence docs that will assist with questions",
+        "Actively creates documents or updates them when they exist",
+        "Participates in holding knowledge-sharing sessions within their chapter/wider team.",
       ],
       "examples": [
-        "Implemented Google Auth login to Medium",
-        "Implemented payments integration with Stripe",
-        "Built Textshots server",
       ],
     }, {
-      "summary": "Builds complex, reusable architectures that pioneer best practices for other engineers, or multi-system services",
+      "summary": "Understands and documents a wider area of domain knowledge to such a level that they develop the understanding of the Test Team and the Functional Leads.",
       "signals": [
-        "Delivers complex systems that achieve their goals",
-        "Avoids subtle architectural mistakes when considering new systems",
-        "Makes appropriate buy vs build choices",
+        "Is confident in the product in at least a couple of markets",
+        "Their Confluence documentation has working examples and and FAQ information to enable people to test the area independently",
+        "Is regarded as an SME within Flux for (a) given area/s, and is asked for input/feedback from wider teams to assist with development/testing, and/or for writing Jiras.",
       ],
       "examples": [
-        "Designed Medium's ranked feed architecture",
-        "Designed custom domains architecture",
-        "Created Gotham framework for creating Go services",
       ],
     }, {
-      "summary": "Is an industry-leading expert in server side engineering or sets strategic server side direction for an eng team",
+      "summary": "Uses specific domain knowledge to such a level that they develop the understanding of the wider Flux Team in order to help the entire company make better quality decisions about our products.",
       "signals": [
-        "Designs transformational projects of significant complexity and scope",
-        "Makes decisions that have positive, long term, wide ranging consequences",
-        "Identifies and solves systemic problems with current architecture",
+        "Has significant role in new initiatives",
+        "Has comprehensive understanding of the variances between Application components within their Value Stream. A TA at this level should be able to make confident assertions on which markets require testing for a change",
+        "Works with functional leads to document areas of the application, is seen as an authority on large areas of the application and addresses questions around the direction this functional domain needs to take.",
+        "Has input in and uses existing knowledge to help in the progress of long term projects.",
+        "Contributes in Flux Talks or by using any other medium to share domain knowledge, and seeks to support knowledge sharing and growth within Flux as a whole.",
       ],
       "examples": [
-        "Researched, vetted, and selected Go as Medium's statically typed language",
-        "Defined microservices architecture and medium2 migration plan",
-        "Defined and implemented proprietary IP core to the company's success",
       ],
     }],
   },
@@ -358,55 +350,51 @@ export const tracks: Tracks = {
     "category": "C",
     "description": "Develops expertise in native mobile platform engineering, such as iOS or Android",
     "milestones": [{
-      "summary": "Works effectively within established iOS or Android architectures, following current best practices",
+      "summary": "Works effectively within established iOS or Android architectures, following known practices",
       "signals": [
         "Delivers features requiring simple local modifications",
         "Adds simple actions that call server endpoints",
         "Reuses existing components appropriately",
       ],
       "examples": [
-        "Added existing button to a different iOS surface",
-        "Add follow button for publications on Android",
-        "Fetched and displayed a new stream, using existing stream item styles",
+        "Reuse a button component in another view",
+        "Fetch data from an API endpoint and show in a view",
       ],
     }, {
       "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
       "signals": [
-        "Defines new useful and appropriate proto-generated objects",
         "Creates simple new activities on Android",
-        "Migrates code from old patterns to new patterns",
+        "Migrates code from old patterns to existing patterns",
+        "Creates new components that work with the existing architecture",
       ],
       "examples": [
-        "Upgraded SDWebImage to a new major version",
-        "Added support for rendering a new type of stream item",
+        "Implemented an MVP list view feature",
         "Prototyped a simple new feature quickly",
       ],
     }, {
       "summary": "Designs major new features and demonstrates a nuanced understanding of mobile platform constraints",
       "signals": [
         "Implements complex features with a large product surface area",
-        "Works effectively with  Android reactive programming framework",
+        "Works effectively with asynchronous data and user interfaces",
         "Adds support for new iOS features after a major iOS version upgrade",
+        "Stays up to date and informs the team about recent best practice changes and deprecations",
       ],
       "examples": [
-        "Designed iOS caching strategy for offline reading",
-        "Built series reader on Android",
-        "Informed the team about recent best practice changes and deprecations",
+        "Designed architecture for fetching and rendering timeline events",
       ],
     }, {
       "summary": "Builds complex, reusable architectures that pioneer best practices and enable engineers to work more effectively",
       "signals": [
         "Pioneers architecture migration strategies that reduce programmer burden",
         "Fixes subtle memory management issues",
-        "Implements interactive dismissals that bring delight",
+        "Implements custom interactive UIs that bring delight",
       ],
       "examples": [
         "Upgraded CocoaPods to a new major version",
-        "Designed architecture for fetching and rendering stream items",
         "Migrated Android persistance layer to reactive programming",
       ],
     }, {
-      "summary": "Is an industry-leading expert in mobile engineering or sets strategic mobile direction for an eng team",
+      "summary": "Is an industry-leading expert in mobile engineering or sets strategic mobile direction for a delivery team",
       "signals": [
         "Defines long-term goals and ensures active projects are in service of them",
         "Designs and builds innovative, industry-leading UI interactions",
@@ -414,7 +402,6 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Defined and drove complete migration plan to Swift or Kotlin",
-        "Implemented Android recycler views before platform support existed",
         "Pioneered application-level abstractions for multi-app environment",
       ],
     }],
