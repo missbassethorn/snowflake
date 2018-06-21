@@ -890,27 +890,6 @@ export const tracks: Tracks = {
       ],
     }],
   },
-
-  "BLANK_1": {
-    "displayName": "",
-    "category": "H",
-    "description": "",
-    "milestones": [],
-  },
-
-  "BLANK_2": {
-    "displayName": "",
-    "category": "H",
-    "description": "",
-    "milestones": [],
-  },
-
-  "BLANK_3": {
-    "displayName": "",
-    "category": "H",
-    "description": "",
-    "milestones": [],
-  },
 }
 
 export const trackIds: TrackId[] = Object.keys(tracks)
