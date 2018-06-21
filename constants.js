@@ -4,7 +4,7 @@ import * as d3 from 'd3'
 export type TrackId = 'PEOPLE' | 'TEST_APPROACH' | 'TEST_TECHNIQUE' | 'TEST_DOMAIN_KNOWLEDGE' |
   'MOBILE_DEV' | 'RAILS_DEV' | 'DEV_SOFTWARE_CRAFT' | 'DEV_TOOLING_SYSTEMS' |
   'DEVOPS_FOUNDATION' | 'DEVOPS_TRANSFORMATION' | 'DEVOPS_CONSTRUCTION' | 'SCRUM_MASTER_PRACTICE' |
-  'SCRUM_MASTER_TECHNICAL' | 'BLANK_1' | 'BLANK_2' | 'BLANK_3'
+  'SCRUM_MASTER_TECHNICAL'
 export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
 
 export type MilestoneMap = {
@@ -20,11 +20,9 @@ export type MilestoneMap = {
   'DEVOPS_TRANSFORMATION': Milestone,
   'DEVOPS_CONSTRUCTION': Milestone,
   'SCRUM_MASTER_PRACTICE': Milestone,
-  'SCRUM_MASTER_TECHNICAL': Milestone,
-  'BLANK_1': Milestone,
-  'BLANK_2': Milestone,
-  'BLANK_3': Milestone
+  'SCRUM_MASTER_TECHNICAL': Milestone
 }
+
 export const milestones = [0, 1, 2, 3, 4, 5]
 
 export const milestoneToPoints = (milestone: Milestone): number => {
@@ -83,10 +81,7 @@ type Tracks = {|
   'DEVOPS_TRANSFORMATION': Track,
   'DEVOPS_CONSTRUCTION': Track,
   'SCRUM_MASTER_PRACTICE': Track,
-  'SCRUM_MASTER_TECHNICAL': Track,
-  'BLANK_1': Track,
-  'BLANK_2': Track,
-  'BLANK_3': Track
+  'SCRUM_MASTER_TECHNICAL': Track
 |}
 
 export const tracks: Tracks = {
@@ -919,7 +914,7 @@ export const totalPointsFromMilestoneMap = (milestoneMap: MilestoneMap): number 
 
 export const categoryColorScale = d3.scaleOrdinal()
   .domain(categoryIds)
-  .range(['#8e7cc3', '#428af6', '#00abc2', '#e1439f', '#6aa84f', '#ffd966', '#e69138', '#d9d9d9'])
+  .range([' #8e7cc3', '#428af6', '#00abc2', '#e1439f', '#6aa84f', '#ffd966', '#e69138'])
 
 export const titles = [
   {label: 'Engineer I', minPoints: 0, maxPoints: 16},

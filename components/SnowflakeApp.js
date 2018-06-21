@@ -62,10 +62,7 @@ const emptyState = (): SnowflakeAppState => {
       'DEVOPS_TRANSFORMATION': 0,
       'DEVOPS_CONSTRUCTION': 0,
       'SCRUM_MASTER_PRACTICE': 0,
-      'SCRUM_MASTER_TECHNICAL': 0,
-      'BLANK_1': 0,
-      'BLANK_2': 0,
-      'BLANK_3': 0
+      'SCRUM_MASTER_TECHNICAL': 0
     },
     focusedTrackId: 'PEOPLE'
   }
