@@ -579,7 +579,7 @@ export const tracks: Tracks = {
   "DEVOPS_FOUNDATION": {
     "displayName": "DevOps foundation",
     "category": "F",
-    "description": "Develops expertise in traditional systems skills, including operating systems, networks and protocols, hardware, service and server configuration, monitoring and security",
+    "description":  "Develops expertise in traditional systems skills, including operating systems, networks and protocols, hardware, service and server configuration, monitoring and security",
     "milestones": [{
       "summary": "Gains familiarity with systems administration practices through observation and questioning.",
       "signals": [
@@ -641,66 +641,56 @@ export const tracks: Tracks = {
   "DEVOPS_TRANSFORMATION": {
     "displayName": "DevOps transformation",
     "category": "F",
-    "description": "Defines processes and structures that enables the strong growth and execution of a diverse eng organization",
+    "description": "Develops expertise in modern delivery tooling, including Cloud and SDN, containerisation and orchestration, scaling on demand, infrastructure as code and immutable infrastructure, and Flux tooling",
     "milestones": [{
-      "summary": "Respects and participates in processes, giving meaningful feedback to help the organization improve",
+      "summary": "Increasingly familiar with the goals of modern devops practices.",
       "signals": [
-        "Reflects on meetings that leave them inspired or frustrated",
-        "Teaches others about existing processes",
-        "Actively participates and makes contributions within organizational processes",
+        "Can differentiate the main AWS services",
+        "Trusted to run basic capistrano tasks",
+        "Can make simple config changes to servers via capistrano",
       ],
       "examples": [
-        "Facilitated effective tactical meeting with empathy",
-        "Explained tactical meeting format to a new hire",
-        "Provided feedback on sprint planning meeting",
+          "Able to talk about modern principles eg immutable infrastructure",
       ],
     }, {
-      "summary": "Identifies opportunities to improve existing processes and makes changes that positively affect the local team",
+      "summary": "Starts to improve team velocity and capacity by taking on repetitive work and simple enhancements.",
       "signals": [
-        "Defines meeting structure and cadence that meets team needs",
-        "Engages in organizational systems thinking",
-        "Advocates for improved diversity and inclusion, and proposes ideas to help",
+        "Can convert manual shell operations into self contained capistrano tasks",
+        "Working knowledge of AWS networking concepts",
+        "Trusted to run common automated tasks against production infrastructure",
       ],
       "examples": [
-        "Defined Frankenmeeting structure for small team",
-        "Improved Watch on-call rotation scheduling",
-        "Defined standard channels for inter-team communication",
+        "Can 'Dockerise' simple applications",
       ],
     }, {
-      "summary": "Develops processes to solve ongoing organizational problems",
+      "summary": "Builds useful automation and supports transformation of infrastructure onto new technologies.",
       "signals": [
-        "Creates programs that meaningfully improve organizational diversity",
-        "Solves long-standing organizational problems",
-        "Reallocates resources to meet organizational needs",
+        "Can integrate new AWS APIs into capistrano tasks",
+        "Understands Linux/Docker containers and their kernel components",
       ],
       "examples": [
-        "Developed baseline team templates for consistency",
-        "Created bug-rotation program to address ongoing quality issues",
-        "Defined Guilds manifesto and charter",
+        "Able to integrate new cloud platform implementatons into capistrano tooling",
+        "Creating container images for most apps",
       ],
     }, {
-      "summary": "Thinks deeply about organizational issues and identifies hidden dynamics that contribute to them",
+      "summary": "Actively contributing to the future shape of the infrastructure platform.",
       "signals": [
-        "Evaluates incentive structures and their effect on execution",
-        "Analyzes existing processes for bias and shortfall",
-        "Ties abstract concerns to concrete organizational actions or norms",
+        "Operation of production Kubernetes clusters",
+        "Can package and maintain Powershop app container images",
+        "Understands security ramifications of new platforms and deployment techniques",
       ],
       "examples": [
-        "Connected mobile recruiting difficulties to focus on excellence",
-        "Raised leadership level change discrepancies",
-        "Analyzed the hiring rubric for false negative potential",
+        "Can identify and fix issues slowing image creation and deployment deployment times.",
       ],
     }, {
-      "summary": "Leads initiatives to address issues stemming from hidden dynamics and company norms",
+      "summary": "Shaping the infrastructure architecture for long term success.  ",
       "signals": [
-        "Builds programs to train leadership in desired skills",
-        "Creates new structures that provide unique growth opportunities",
-        "Leads planning and communication for reorgs",
+        "Implementing intelligent autoscaling of Powershop apps",
+        "Deep understanding and debugging of different Kubernetes networking options",
+        "Collaborating with wider development team on ways the product codebases can support new infrastructure architectures and techniques",
       ],
       "examples": [
-        "Lead efforts to increase number of mobile engineers",
-        "Directed resources to meaningfully improve diversity at all levels",
-        "Built the growth framework rubric",
+        "Deep knowledge of SDN implementations.", 
       ],
     }],
   },
