@@ -473,18 +473,16 @@ export const tracks: Tracks = {
   "DEV_SOFTWARE_CRAFT": {
     "displayName": "Dev software craft",
     "category": "E",
-    "description": "Embodies and promotes practices to ensure excellent quality products and services",
+    "description": "Develops expertise in crafting software; language and framework agnostic  ",
     "milestones": [{
       "summary": "Delivers consistently good quality work",
       "signals": [
-        "Tests new code thoroughly, both locally, and in production once shipped",
-        "Writes tests for every new feature and bug fix",
+        "Verifies that code written performs the intended outcome with thorough tests",
         "Writes clear comments and documentation",
+        "Assesses correctness and utility of existing code and avoids blind copy-pasting",
       ],
       "examples": [
-        "Caught a bug on Hatch before it went live",
-        "Landed non-trivial PR with no caretaker comments",
-        "Wrote hermetic tests for the happy and sad cases",
+        "Merged MR independently with little change required",
       ],
     }, {
       "summary": "Increases the robustness and reliability of codebases, and devotes time to polishing products and systems",
@@ -494,45 +492,34 @@ export const tracks: Tracks = {
         "Deletes unnecessary code and deprecates proactively when safe to do so",
       ],
       "examples": [
-        "Requested tests for a PR when acting as reviewer",
-        "Reduced the number of zelda fitzgerald exceptions",
-        "Fixed a TODO for someone else in the codebase",
+        "Provides specific feedback on MRs to add tests",
       ],
     }, {
       "summary": "Improves others' ability to deliver great quality work",
       "signals": [
-        "Implements systems that enable better testing",
-        "Gives thoughtful code reviews as a domain expert",
-        "Adds tooling to improve code quality",
+        "Provides thorough and thoughtful code review feedback on MRs",
+        "Designs new systems that meet short and long-term requirements",
       ],
       "examples": [
-        "Improved PRB to run the same volume of tests faster",
-        "Simplified hermetic test data modification",
-        "Created fixture system for visual quality",
+        "Improves test system throughput",
       ],
     }, {
       "summary": "Advocates for and models great quality with proactive actions, and tackles difficult and subtle system issues",
       "signals": [
-        "Builds systems so as to eliminate entire classes of programmer error",
-        "Focuses the team on quality with regular reminders",
-        "Coordinates Watch priorities and projects",
+        "Makes architectural decisions that eliminate entire classes of bugs and reduce programmer burden",
+        "Identifies and solves systemic problems with current architecture",
+        "Advocates for quality in specific areas across teams",
       ],
       "examples": [
-        "Added code coverage reporting to iOS CI pipeline",
-        "Iterated repeatedly to develop Medium's underlines solution",
-        "Defined and oversaw plan for closing Heartbleed vulnerability",
       ],
     }, {
       "summary": "Enables and encourages the entire organization to make quality a central part of the development process",
       "signals": [
-        "Defines policies for the engineering org that encourage quality work",
-        "Identifies and eliminates single points of failure throughout the organization",
-        "Secures time and resources from execs to support great quality",
+        "Defines policies to improve quality with positive, organisation-wide consequences",
+        "Defines a long-term vision for technical success and ensures projects are in service of it",
+        "Negotiates time and resources to support great quality work",
       ],
       "examples": [
-        "Negotiated resources for Fix-It week with exec team",
-        "Instituted and ensured success of a 20% time policy",
-        "Started The Watch",
       ],
     }],
   },
@@ -540,57 +527,42 @@ export const tracks: Tracks = {
   "DEV_TOOLING_SYSTEMS": {
     "displayName": "Dev tooling systems",
     "category": "E",
-    "description": "Challenges the status quo and effects positive organizational change outside of mandated work",
+    "description": "Develops expertise in foundational systems, such as deployments, pipelines, databases",
     "milestones": [{
-      "summary": "Identifies opportunities for organizational change or product improvements",
+      "summary": "Works effectively within established structures, following current best practices",
       "signals": [
-        "Writes Hatch posts about improvement opportunities",
-        "Raises meaningful tensions in tactical meetings",
-        "Asks leadership team probing questions at FAM",
+        "Runs applications locally using a restricted anonymised snapshot",
       ],
       "examples": [
-        "Wrote about problems with TTR on Hatch",
-        "Wrote about content policy problems on Hatch",
-        "Reported a site issue in Github",
+        "Can effectively navigate and edit a piece of software",
       ],
     }, {
-      "summary": "Causes change to positively impact a few individuals or minor improvement to an existing product or service",
+      "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
       "signals": [
-        "Picks bugs off the backlog proactively when blocked elsewhere",
-        "Makes design quality improvements unprompted",
-        "Takes on trust and safety tasks proactively when blocked elsewhere",
+        "Appropriately anonymises new record types",
+        "Corrects CI tasks that fail to report failures",
       ],
       "examples": [
-        "Advocated on own behalf for a change in role",
-        "Implemented flow typing for promises",
-        "Audited web client performance in Chrome and proposed fixes",
+        "Understands and executes the steps to make a change releasable (source control, CI, WIPs)",
+        "Identify when a multi-stage release is appropriate",
       ],
     }, {
-      "summary": "Causes change to positively impact an entire team or instigates a minor feature or service",
+      "summary": "Designs standalone systems of moderate complexity, or major new features in existing systems",
       "signals": [
-        "Demonstrates concepts proactively with prototypes",
-        "Fixes complicated bugs outside of regular domain",
-        "Takes ownership of systems that nobody owns or wants",
+          "Adds tooling to improve code quality",
       ],
       "examples": [
-        "Defined style guide to resolve style arguments",
-        "Proposed and implemented at-mentions prototype",
-        "Implemented video for Android independently, unprompted",
+        "Designs and sequences a multi-stage release",
       ],
     }, {
-      "summary": "Effects change that has a substantial positive impact on the engineering organization or a major product impact",
+      "summary": "Builds complex, reusable architectures that pioneer best practices for other engineers, or multi-system services ",
       "signals": [
-        "Champions and pioneers new technologies to solve new classes of problem",
-        "Exemplifies grit and determination in the face of persistent obstacles",
-        "Instigates major new features, services, or architectures",
+        "Constructs general mechanism to perform backfills without interfering with system operation",
       ],
       "examples": [
-        "Created the interviewing rubric and booklet",
-        "Implemented and secured support for native login",
-        "Migrated medium2 to mono repo and bazel",
       ],
     }, {
-      "summary": "Effects change that has a substantial positive impact on the whole company",
+      "summary": "Is an industry-leading expert in foundational engineering or sets strategic foundational direction for an eng team ",
       "signals": [
         "Creates a new function to solve systemic issues",
         "Galvanizes the entire company and garners buy in for a new strategy",
