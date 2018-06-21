@@ -894,16 +894,22 @@ export const tracks: Tracks = {
   "BLANK_1": {
     "displayName": "",
     "category": "H",
+    "description": "",
+    "milestones": [],
   },
 
   "BLANK_2": {
     "displayName": "",
-    "category": "H"
+    "category": "H",
+    "description": "",
+    "milestones": [],
   },
 
   "BLANK_3": {
     "displayName": "",
-    "category": "H"
+    "category": "H",
+    "description": "",
+    "milestones": [],
   },
 }
 
